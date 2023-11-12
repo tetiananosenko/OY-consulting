@@ -1,4 +1,4 @@
-@import "../../styles/constants.scss";
+@import '../../styles/constants.scss';
 
 .navigation {
   display: flex;
@@ -28,11 +28,11 @@
 
 .listItem {
   color: $mainFontColor;
-  font-family: $font-family-navigation;
+  font-family: $font-family;
   font-size: 18px;
   font-weight: 500;
   padding-right: 40px;
-  transition: .3s;
+  transition: 0.3s;
 
   &:hover {
     color: $mainFontColor;
