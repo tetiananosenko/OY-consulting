@@ -1,0 +1,41 @@
+@import "../../styles/constants.scss";
+
+.navigation {
+  display: flex;
+  align-items: center;
+  max-width: 1440px;
+  height: 81px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-left: 80px;
+}
+
+.logoText {
+  color: $mainFontColor;
+  font-family: $font-family-main;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 275;
+  padding-left: 5px;
+}
+
+.navbar {
+  margin-left: 283px;
+}
+
+.listItem {
+  color: $mainFontColor;
+  font-family: $font-family-navigation;
+  font-size: 18px;
+  font-weight: 500;
+  padding-right: 40px;
+  transition: .3s;
+
+  &:hover {
+    color: $mainFontColor;
+    opacity: 0.6;
+  }
+}
