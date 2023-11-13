@@ -1,0 +1,94 @@
+@import "../../styles/constants.scss";
+
+.wrapperSection {
+  width: 100%;
+  height: 689px;
+  padding: 0px 155px;
+  background-color: $WhiteFlightColor;
+}
+
+.Headertitle {
+  text-align: center;
+  padding: 40px 0px;
+}
+
+.image {
+  width: 361px;
+  height: 282px;
+}
+
+.wrapperBlogs {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.itemWrapper {
+  width: 361px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  height: 531px;
+}
+
+.text {
+  color: #898989;
+  font-family: $font-family;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.title {
+  color: $mainFontColor;
+  font-family: $font-family;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  text-align: start;
+}
+
+.textWrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  gap: 8px;
+}
+
+.linkWrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  width: 140px;
+  height: 53px;
+  align-items: center;
+  color: $mainFontColor;
+  font-family: $font-family;
+  font-size: 18px;
+  font-weight: 500;
+  border: 1px solid $mainFontColor;
+  margin: 8px 0px 16px;
+  cursor: pointer;
+  transition: 0.4s;
+
+  &:hover {
+    background-color: black;
+    color: white;
+  }
+}
+
+.imageWrapper {
+  position: relative;
+}
+
+.data {
+  width: 91px;
+  height: 28px;
+  background-color: white;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
