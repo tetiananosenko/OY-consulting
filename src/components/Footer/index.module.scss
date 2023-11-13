@@ -1,0 +1,24 @@
+@import "../../styles/constants.scss";
+
+.footer {
+  width: 100%;
+  height: 65px;
+  background-color: $WhiteFlightColor;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 80px;
+}
+
+.iconsWrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+
+.text {
+  color: #636363;
+  font-family: "League Spartan", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}

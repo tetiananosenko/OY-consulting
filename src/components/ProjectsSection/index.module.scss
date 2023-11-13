@@ -1,7 +1,7 @@
 @import "../../styles/constants.scss";
 
 .wrapper {
-  background-color: #f2f2f2;
+  background-color: $WhiteFlightColor;
   width: 100%;
   height: 764px;
 }
@@ -70,7 +70,7 @@
 .cardItem {
   height: 322px;
   width: 520px;
-  background-color: #f2f2f2;
+  background-color: $WhiteFlightColor;
   display: flex;
   justify-content: center;
   align-items: center;
