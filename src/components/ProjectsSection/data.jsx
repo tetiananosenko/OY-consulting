@@ -17,6 +17,4 @@ const dataProjects = [
   },
 ];
 
-console.log(dataProjects,'datatata')
-
 export default dataProjects;
