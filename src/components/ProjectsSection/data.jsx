@@ -9,7 +9,7 @@ const dataProjects = [
     logo: <Logo />,
   },
   {
-    id: 0,
+    id: 1,
     title: 'Culture for Ukraine',
     description:
       'OY Consulting specializes in business-to-government networking between the U.S. and Ukraine. We provide connections within the private and public sector and assist in developing relationships beneficial for both countries.',

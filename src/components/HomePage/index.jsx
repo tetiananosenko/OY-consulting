@@ -3,6 +3,7 @@ import BlogsSection from '../BlogsSection';
 import ContactSection from '../ContactSection';
 import Footer from '../Footer';
 import HeaderSection from '../HeaderSection';
+import PackagesSection from '../PackagesSection';
 import ProjectsSection from '../ProjectsSection';
 
 const HomePage = () => (
@@ -10,9 +11,9 @@ const HomePage = () => (
     <HeaderSection />
     <AboutSection />
     <ProjectsSection />
+    <PackagesSection />
     <BlogsSection />
     <ContactSection />
-    <Footer />
   </>
 );
 

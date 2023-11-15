@@ -1,0 +1,102 @@
+@import "../../styles/constants.scss";
+
+.sectionWrapper {
+  height: 764px;
+  width: 100%;
+  padding: 0px 80px;
+}
+
+.wrapperCards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 24px;
+  align-items: center;
+  padding-top: 40px;
+}
+
+.cardWrapper {
+  height: 493px;
+  width: 410px;
+  display: flex;
+  justify-content: center;
+  // flex-direction: column;
+  border: 1px solid #bebebe;
+  transition: 0.6s;
+  // margin-top: 69px;
+}
+
+.itemWrapper {
+  display: flex;
+  // justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 64px;
+}
+
+.blockText {
+  color: white;
+  font-family: $font-family;
+  font-size: 18px;
+  font-weight: 600px;
+}
+
+.text {
+  @extend .blockText;
+  padding-bottom: 16px;
+  color: $mainFontColor;
+}
+
+.title {
+  @extend .blockText;
+  padding-top: 40px;
+  color: $mainFontColor;
+  text-align: center;
+  font-size: 32px;
+}
+
+.textPackage {
+  @extend .blockText;
+  padding: 0px;
+  color: $mainFontColor;
+}
+
+.block {
+  display: flex;
+  width: 281px;
+  height: 53px;
+  justify-content: center;
+  align-items: center;
+  background: $mainFontColor;
+  margin: 32px 0px;
+}
+
+// class active
+.active {
+  @extend .cardWrapper;
+  height: 551px;
+  border: 1px solid $mainFontColor;
+  transition: 0.6s;
+  // margin-top: 40px;
+}
+
+.button {
+  @extend .blockText;
+  color: $mainFontColor;
+  display: flex;
+  width: 281px;
+  // padding: 16px 32px;
+  justify-content: center;
+  align-items: center;
+  // gap: 10px;
+  border: 1px solid $mainFontColor;
+  height: 53px;
+  margin-top: 48px;
+  cursor: pointer;
+  transition: 0.4s;
+
+  &:hover {
+    background-color: black;
+    color: white;
+  }
+}

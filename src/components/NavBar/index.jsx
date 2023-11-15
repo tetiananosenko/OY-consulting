@@ -18,7 +18,7 @@ const NavBar = () => (
       <Link to="/blog" className={styles.listItem}>
         {'Blog'}
       </Link>
-      <Link to="/blog" className={styles.listItem}>
+      <Link to="/contact" className={styles.listItem}>
         {'Contact'}
       </Link>
     </div>

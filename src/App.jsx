@@ -1,4 +1,6 @@
 import { Routes, Route } from 'react-router-dom';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
 import HomePage from './components/HomePage';
 import NavBar from './components/NavBar';
 import './styles/index.scss';
@@ -9,8 +11,9 @@ function App() {
       <NavBar />
       <Routes>
         <Route path="/" element={<HomePage />} />
-        {/* <Route path="/main-page/men" element={<MainPage />} />  */}
+        <Route path="/contact" element={<Contact />} /> 
       </Routes>
+      <Footer />
     </>
   );
 }
