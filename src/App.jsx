@@ -2,6 +2,7 @@ import { Routes, Route } from 'react-router-dom';
 import About from './components/About';
 import Blog from './components/Blog';
 import Blogs from './components/Blogs';
+import Breadcrumbs from './components/BreadCrumbs';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import HomePage from './components/HomePage';
@@ -11,6 +12,7 @@ import './styles/index.scss';
 function App() {
   return (
     <>
+    <Breadcrumbs />
       <Topbar />
       <Routes>
         <Route path="/" element={<HomePage />} />
