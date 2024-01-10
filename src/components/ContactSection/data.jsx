@@ -6,7 +6,7 @@ const dataContact = [
   {
     id: 0,
     icon: <Phone />,
-    info: '+1111-111-1111',
+    info: '+1 (646) 229-3766',
   },
   {
     id: 0,

@@ -8,7 +8,7 @@ const ProjectsSection = () => {
       <h1 className={styles.titleProjects}>Projects</h1>
       <div className={styles.wrapperItem}>
         <div className={styles.cardsWrapper}>
-          {dataProjects.map(({ description, logo, title }) => (
+          {dataProjects.slice(0, 2).map(({ description, logo, title }) => (
             <div className={styles.cardWrapper}>
               <div className={styles.cardItem}>
                 <span className={styles.logo}>{logo}</span>

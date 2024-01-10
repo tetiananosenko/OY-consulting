@@ -7,23 +7,25 @@ const BlogsSection = () => {
     <div className={styles.wrapperSection}>
       <h1 className={styles.Headertitle}>Featured blogs</h1>
       <div className={styles.wrapperBlogs}>
-        {dataBlogs.map(({ title, description, image, data }) => (
-          <div className={styles.itemWrapper}>
-            <div>
-              <div className={styles.imageWrapper}>
-                <img src={image} alt={title} className={styles.image} />
+        {dataBlogs
+          .slice(0, 3)
+          .map(({ id, title, description, image, data }) => (
+            <div className={styles.itemWrapper}>
+              <div>
+                <div className={styles.imageWrapper}>
+                  <img src={image} alt={title} className={styles.image} />
+                </div>
+                <p className={styles.data}>{data}</p>
               </div>
-              <p className={styles.data}>{data}</p>
+              <div className={styles.textWrapper}>
+                <h1 className={styles.title}>{title}</h1>
+                <p className={styles.text}>{description}</p>
+              </div>
+              <Link to={`/blogs/${id}`} className={styles.linkWrapper}>
+                <button className={styles.button}>Read more</button>
+              </Link>
             </div>
-            <div className={styles.textWrapper}>
-              <h1 className={styles.title}>{title}</h1>
-              <p className={styles.text}>{description}</p>
-            </div>
-            <Link to="/blogs/{id}" className={styles.linkWrapper}>
-              <button className={styles.button}>Read more</button>
-            </Link>
-          </div>
-        ))}
+          ))}
       </div>
     </div>
   );

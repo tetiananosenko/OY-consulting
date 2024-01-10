@@ -1,0 +1,37 @@
+@import "../../styles/constants.scss";
+
+.componentWrapper {
+  position: absolute;
+  left: 32px;
+  width: calc(100% - 32px);
+  @include media(laptopUp) {
+    display: none;
+  }
+}
+
+.title {
+  color: $mainFontColor;
+  font-family: $font-family;
+  font-size: 24px;
+  font-weight: 900;
+
+  &:hover {
+    color: $mainFontColor;
+    opacity: 0.6;
+  }
+}
+
+.wrapperItem {
+  margin-bottom: 40px;
+}
+.titleWrapper {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  z-index: 1;
+  left: -32px;
+  padding: 64px 0px 24px 0px;
+}

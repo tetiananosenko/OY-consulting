@@ -13,7 +13,7 @@ const Contact = () => (
             You can follow Olga on&nbsp;
             <a
               className={styles.link}
-              href="https://www.linkedin.com/company/olgayelchenkoconsulting/about/"
+              href="https://www.facebook.com/people/OY-Consulting/61550272890787/"
               target="_blank"
             >
               Facebook
@@ -29,7 +29,7 @@ const Contact = () => (
             &nbsp;and&nbsp;
             <a
               className={styles.link}
-              href="https://www.linkedin.com/company/olgayelchenkoconsulting/about/"
+              href="https://www.instagram.com/oyconsulting/"
               target="_blank"
             >
               Instagram

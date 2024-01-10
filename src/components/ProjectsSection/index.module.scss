@@ -55,6 +55,10 @@
   display: flex;
   flex-direction: row;
   gap: 24px;
+
+  @include media(tablet) {
+     flex-direction: column;
+  }
 }
 
 .cardWrapper {

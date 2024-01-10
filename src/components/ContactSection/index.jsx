@@ -4,7 +4,6 @@ import styles from './index.module.scss';
 const ContactSection = ({children, className}) => {
   return (
     <div className={styles.wrapperSection}>
-      {/* <h1 className={styles.title}>Contact</h1> */}
       {<h1 className={className ? className : styles.title}>Contact</h1>}
       {children}
       <div className={styles.wrapperContact}>
