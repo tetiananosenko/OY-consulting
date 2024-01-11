@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import routes from '../TopBar/routes';
+import routes from '../../pages/TopBar/routes';
 import styles from './index.module.scss';
 
 const NavDesktop = () => {

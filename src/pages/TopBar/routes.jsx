@@ -9,7 +9,7 @@ const routes = [
   },
   {
     title: 'Blog',
-    href: '/blogs',
+    href: '/blog',
   },
   {
     title: 'Contact',

@@ -1,10 +1,10 @@
 import dataDescription from './data';
 import styles from './index.module.scss';
 import Quotes from '../../assets/svg/Quotes';
+import Layout from '../Layout';
 
 const About = () => (
-  <div>
-    <div className={styles.test}>
+  <Layout childComponent={ <div className={styles.test}>
       <div className={styles.mainWrapper}>
         <div className={styles.titleWrapper}>
           <p className={styles.title}>Olga Yelchenko</p>
@@ -14,7 +14,7 @@ const About = () => (
           </p>
         </div>
       </div>
-    </div>
+    </div>}>
     <div className={styles.descriptionWrapper}>
       <div className={styles.textWrapper}>
         {dataDescription.map(({ description }) => (
@@ -63,7 +63,7 @@ const About = () => (
         </div>
       </div>
     </div>
-  </div>
+  </Layout>
 );
 
 export default About;

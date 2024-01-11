@@ -1,47 +1,4 @@
-@import "../../styles/constants.scss";
-
-.wrapperContact {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  @include media(tablet) {
-    flex-direction: column;
-    gap: 24px;
-  }
-}
-
-.wrapperSection {
-  height: 372px;
-  width: 100%;
-  padding: 0px 155px;
-}
-
 .title {
   text-align: center;
   padding: 40px 0px;
-}
-
-.itemWrapper {
-  width: 361px;
-  height: 174px;
-  border: 1px solid #bebebe;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap: 24px;
-
-  @include media(tablet) {
-    width: 416px;
-  }
-}
-
-.text {
-  color: $mainFontColor;
-  text-align: center;
-  font-family: $font-family;
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 30px;
 }

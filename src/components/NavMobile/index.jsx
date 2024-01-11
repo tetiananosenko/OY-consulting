@@ -2,7 +2,7 @@ import { useClickAway } from 'react-use';
 import { useRef } from 'react';
 import { useState } from 'react';
 import { Squash as Hamburger } from 'hamburger-react';
-import routes from '../TopBar/routes';
+import routes from '../../pages/TopBar/routes';
 import styles from './index.module.scss';
 import { Link } from 'react-router-dom';
 

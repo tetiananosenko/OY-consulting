@@ -1,12 +1,18 @@
+import ContactSection from '../../components/ContactCard';
+import Layout from '../Layout';
 import styles from './index.module.scss';
-import ContactSection from '../ContactSection';
+
 
 const Contact = () => (
-  <div className={styles.wrapper}>
-    <ContactSection className={styles.title}>
+    <Layout childComponent = {
+    <>
+      <p className={styles.title}>Contact</p>
       <div className={styles.lineWrapper}>
         <hr className={styles.line} />
       </div>
+    </>
+    }>
+      <div className={styles.wrapper}>
       <div className={styles.infowrapper}>
         <div className={styles.textWrapper}>
           <p className={styles.text}>
@@ -38,8 +44,9 @@ const Contact = () => (
           </p>
         </div>
       </div>
-    </ContactSection>
-  </div>
+      <ContactSection />
+      </div>
+  </Layout>
 );
 
 export default Contact;

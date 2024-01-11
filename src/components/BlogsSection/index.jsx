@@ -11,17 +11,15 @@ const BlogsSection = () => {
           .slice(0, 3)
           .map(({ id, title, description, image, data }) => (
             <div className={styles.itemWrapper}>
-              <div>
                 <div className={styles.imageWrapper}>
                   <img src={image} alt={title} className={styles.image} />
+                  <p className={styles.data}>{data}</p>
                 </div>
-                <p className={styles.data}>{data}</p>
-              </div>
               <div className={styles.textWrapper}>
                 <h1 className={styles.title}>{title}</h1>
                 <p className={styles.text}>{description}</p>
               </div>
-              <Link to={`/blogs/${id}`} className={styles.linkWrapper}>
+              <Link to={`/blog/${id}`} className={styles.linkWrapper}>
                 <button className={styles.button}>Read more</button>
               </Link>
             </div>

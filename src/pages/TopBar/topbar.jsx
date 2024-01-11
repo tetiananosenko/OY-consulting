@@ -1,12 +1,12 @@
-import NavDesktop from '../NavDesktop';
-import NavMobile from '../NavMobile';
+import NavDesktop from '../../components/NavDesktop';
+import NavMobile from '../../components/NavMobile';
 import { Link } from 'react-router-dom';
 import Logo from '../../assets/svg/Logo';
 import styles from './index.module.scss';
 
 const Topbar = () => (
   <>
-    <div className={styles.test}>
+    <div className={styles.topBarWrapper}>
       <nav className={styles.navigation}>
         <Link to="/" className={styles.logo}>
           <Logo />

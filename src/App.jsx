@@ -1,27 +1,21 @@
 import { Routes, Route } from 'react-router-dom';
-import About from './components/About';
+import About from './pages/About';
 import Blog from './components/Blog';
-import Blogs from './components/Blogs';
-import Breadcrumbs from './components/BreadCrumbs';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
-import HomePage from './components/HomePage';
-import Topbar from './components/TopBar/topbar';
+import Blogs from './pages/Blogs';
+import Contact from './pages/Contact';
+import HomePage from './pages/HomePage';
 import './styles/index.scss';
 
 function App() {
   return (
     <>
-    <Breadcrumbs />
-      <Topbar />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/about" element={<About />} />
-        <Route path="/blogs" element={<Blogs />} />
-        <Route path="/blogs/:id" element={<Blog />} />
+        <Route path="/blog" element={<Blogs />} />
+        <Route path="/blog/:id" element={<Blog />} />
       </Routes>
-      <Footer />
     </>
   );
 }

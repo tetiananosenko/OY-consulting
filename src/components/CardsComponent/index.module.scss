@@ -8,28 +8,6 @@
   padding: 0px 80px;
 }
 
-.titleBlog {
-  text-align: center;
-  margin: 40px 0px;
-  color: $mainFontColor;
-  font-family: $font-family;
-  font-size: 80px;
-  font-weight: 600;
-  text-transform: uppercase;
-}
-
-.line {
-  background: #bebebe;
-  width: 1280px;
-  height: 1px;
-}
-
-.lineWrapper {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
 .wrapperImage {
   position: relative;
 }

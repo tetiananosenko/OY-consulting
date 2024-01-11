@@ -1,0 +1,21 @@
+@import "../../styles/constants.scss";
+
+.navLink {
+  display: flex;
+  margin: 40px 80px;
+}
+
+.active {
+  color: #898989;
+  font-family: $font-family;
+
+}
+
+.default {
+  color: #151515;
+  font-family: $font-family;
+}
+
+.greater {
+  padding: 0px 16px 0px 16px; 
+}
