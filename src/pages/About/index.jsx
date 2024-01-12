@@ -4,7 +4,7 @@ import Quotes from '../../assets/svg/Quotes';
 import Layout from '../Layout';
 
 const About = () => (
-  <Layout childComponent={ <div className={styles.test}>
+  <Layout childComponent={ <div className={styles.wrapperHeader}>
       <div className={styles.mainWrapper}>
         <div className={styles.titleWrapper}>
           <p className={styles.title}>Olga Yelchenko</p>
@@ -18,7 +18,7 @@ const About = () => (
     <div className={styles.descriptionWrapper}>
       <div className={styles.textWrapper}>
         {dataDescription.map(({ description }) => (
-          <p className={styles.textDescription}>{description}</p>
+          <p className={styles.lastPragraph}>{description}</p>
         ))}
         <div className={styles.quoteWrapper}>
           <div className={styles.quotesWrapper}>
@@ -32,7 +32,7 @@ const About = () => (
           </p>
           <p className={styles.author}>- Olga Yelchenko -</p>
         </div>
-        <div className={styles.missionWrapper}>
+        <div>
           <p className={styles.textDescription}>
             As for now, Olga Yelchenko is in process of registration of her own
             company – Olga Yelchenko LLC. Based in New York, this firm provides

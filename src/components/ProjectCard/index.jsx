@@ -2,10 +2,8 @@ import { Link } from 'react-router-dom';
 import dataProjects from './data';
 import styles from './index.module.scss';
 
-const ProjectsSection = () => {
+const ProjectCard = () => {
   return (
-    <div className={styles.wrapper}>
-      <h1 className={styles.titleProjects}>Projects</h1>
       <div className={styles.wrapperItem}>
         <div className={styles.cardsWrapper}>
           {dataProjects.slice(0, 2).map(({ description, logo, title }) => (
@@ -17,7 +15,7 @@ const ProjectsSection = () => {
               <div className={styles.descriptionWrapper}>
                 <h2 className={styles.title}>{title}</h2>
                 <p className={styles.text}>{description}</p>
-                <Link to="/projects/{id}" className={styles.linkWrapper}>
+                <Link to='/projects/{id}' className={styles.linkWrapper}>
                   <button className={styles.button}>Read more</button>
                 </Link>
               </div>
@@ -25,8 +23,7 @@ const ProjectsSection = () => {
           ))}
         </div>
       </div>
-    </div>
   );
 };
 
-export default ProjectsSection;
+export default ProjectCard;
