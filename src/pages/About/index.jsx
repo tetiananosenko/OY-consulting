@@ -25,9 +25,6 @@ const About = () => (
             <Quotes />
           </div>
           <p className={styles.quote}>
-           My mission is to showcase Ukraine's potential and achievements as a place to do business, invest, and visit, as well as to support the Ukrainian people and institutions in their pursuit of democracy, security, and prosperity. I also leverage my own digital platform and network to communicate and disseminate information and analysis on Ukraine's history, current developments, and future prospects
-          </p>
-          <p className={styles.quote}>
            I've had the privilege of collaborating with over 240 members and partners pf the U.S.-Ukraine Business Council who share a common vision. Together, we aim to strengthen economic and cultural bonds between the U.S.A. and Ukraine.
           </p>
           <p className={styles.author}>- Olga Yelchenko -</p>

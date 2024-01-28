@@ -10,7 +10,7 @@ const Topbar = () => (
       <nav className={styles.navigation}>
         <Link to="/" className={styles.logo}>
           <Logo />
-          <p className={styles.logoText}>Olga Yelchenko</p>
+          <p className={styles.logoText}>Olga Yelchenko Consulting</p>
         </Link>
       </nav>
       <NavMobile />

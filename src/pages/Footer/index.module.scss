@@ -2,24 +2,70 @@
 
 .footer {
   width: 100%;
-  height: 65px;
   background-color: $WhiteFlightColor;
+  padding: 40px 80px 24px;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0px 80px;
-  margin-top: 80px;
+  flex-direction: column;
 }
 
-.iconsWrapper {
+.wrapperSectionContent {
   display: flex;
   flex-direction: row;
-  gap: 24px;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-bottom: 40px;
+}
+
+.wrapperSectionReserved {
+  width: 100%;
+}
+
+.logoWrapper {
+  text-align: center;
+}
+
+.mediaWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.wrapperContent {
+  display: flex;
+  flex-direction: row;
+  max-width: 1048px;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.title {
+  color: $mainFontColor;
+  font-family: $font-family;
+  font-weight: bold;
+  font-size: 16px;
 }
 
 .text {
-  color: #636363;
-  font-family: "League Spartan", sans-serif;
-  font-size: 14px;
+  @extend .title;
   font-weight: 400;
+}
+
+.textReserved {
+  @extend .text;
+  font-size: 14px;
+  text-align: center;
+  border-top: 1px solid #BEBEBE;
+  padding-top: 24px;
+}
+
+.iconWrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.arrow {
+  position: absolute;
 }

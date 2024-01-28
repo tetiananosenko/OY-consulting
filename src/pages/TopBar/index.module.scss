@@ -28,6 +28,7 @@
 
   @include media(tablet) {
     margin-left: 0px;
+    z-index: 1;
   }
 }
 

@@ -8,6 +8,10 @@
 
 .descriptionWrapper {
   max-width: 846px;
+
+  @include media(tablet) {
+    margin: 0px 32px;
+  }
 }
 
 .description {
@@ -20,7 +24,6 @@
 
 .mainImage {
   width: 100%;
-  max-width: 1440px;
 }
 
 .title {
@@ -31,5 +34,8 @@
   font-size: 32px;
   font-weight: 600;
   line-height: 36px;
-}
 
+  @include media(tablet) {
+    margin: 0px 32px;
+  }
+}

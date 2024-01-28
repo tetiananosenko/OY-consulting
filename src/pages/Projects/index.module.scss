@@ -14,6 +14,10 @@
   background: #bebebe;
   width: 1280px;
   height: 1px;
+
+  @include media(tablet) {
+    margin: 0px 32px;
+  }
 }
 
 .lineWrapper {

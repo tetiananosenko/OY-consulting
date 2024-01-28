@@ -21,7 +21,7 @@ const NavMobile = () => {
             return (
               <Link
                 onClick={() => setOpen(prev => !prev)}
-                href={route.href}
+                to={route.href}
                 key={route.title}
                 className={styles.wrapperItem}
               >
