@@ -20,15 +20,12 @@
   width: 410px;
   display: flex;
   justify-content: center;
-  // flex-direction: column;
   border: 1px solid #bebebe;
   transition: 0.6s;
-  // margin-top: 69px;
 }
 
 .itemWrapper {
   display: flex;
-  // justify-content: center;
   align-items: center;
   flex-direction: column;
   margin-top: 64px;
@@ -71,13 +68,11 @@
   margin: 32px 0px;
 }
 
-// class active
 .active {
   @extend .cardWrapper;
   height: 551px;
   border: 1px solid $mainFontColor;
   transition: 0.6s;
-  // margin-top: 40px;
 }
 
 .button {
@@ -85,10 +80,8 @@
   color: $mainFontColor;
   display: flex;
   width: 281px;
-  // padding: 16px 32px;
   justify-content: center;
   align-items: center;
-  // gap: 10px;
   border: 1px solid $mainFontColor;
   height: 53px;
   margin-top: 48px;

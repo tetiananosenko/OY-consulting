@@ -1,0 +1,19 @@
+@import "../../styles/constants.scss";
+
+.titleProjects {
+  padding: 40px 0px;
+  color: $mainFontColor;
+  font-family: $font-family;
+  font-size: 32px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.wrapper {
+  background-color: $WhiteFlightColor;
+  width: 100%;
+
+  @include media(tablet) {
+    height: auto;
+  }
+}

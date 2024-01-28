@@ -1,10 +1,12 @@
 import { Routes, Route } from 'react-router-dom';
+import HomePage from './pages/HomePage';
 import About from './pages/About';
-import Blog from './components/Blog';
+import Projects from './pages/Projects';
+import Project from './pages/Project';
+import Blog from './pages/Blog';
 import Blogs from './pages/Blogs';
 import Contact from './pages/Contact';
-import HomePage from './pages/HomePage';
-import Projects from './pages/Projects';
+import CustomSwiper from './components/CustomSwiper';
 import './styles/index.scss';
 
 function App() {
@@ -16,8 +18,9 @@ function App() {
         <Route path="/blog" element={<Blogs />} />
         <Route path="/blog/:id" element={<Blog />} />
         <Route path="/projects" element={<Projects />} />
+        <Route path="/projects/:id" element={<Project />} />
         <Route path="/contact" element={<Contact />} />
-        {/* <Route path='*' element={<NotFound />}/> */}
+        <Route path='/swiper' element={<CustomSwiper />}/>
       </Routes>
     </>
   );

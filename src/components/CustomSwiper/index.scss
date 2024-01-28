@@ -1,0 +1,24 @@
+
+.bullet {
+  display: inline-block;
+  text-align: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 1px;
+  border: 2px solid black;
+  margin: 0px 24px;
+}
+
+.bulletActive {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border-radius: 2px;
+  background: black;
+  margin: 0px 12px 14px 0px;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+}

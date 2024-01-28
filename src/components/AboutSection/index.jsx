@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import about from '../../assets/images/main-about.png';
+import photoOlga from '../../assets/images/main-about.png';
 import styles from './index.module.scss';
 
 const AboutSection = () => (
@@ -28,7 +28,7 @@ const AboutSection = () => (
         </div>
         <div>
           <img
-            src={about}
+            src={photoOlga}
             alt="Image Olha Yelchenko"
             className={styles.image}
           />

@@ -1,20 +1,25 @@
 import useBreadcrumbs from "use-react-router-breadcrumbs";
 import { NavLink } from "react-router-dom";
+import dataProjects from "../ProjectCard/data";
 import dataBlogs from "../BlogsSection/data";
 import { useLocation } from "react-router-dom";
 import styles from './index.module.scss';
 
-const blogNameById = dataBlogs;
 
-const DynamicUserBreadcrumb = ({ match }) => (
-  <span>{blogNameById[match.params.id].title}</span>
+const DynamicBlogBreadcrumb = ({ match }) => (
+  <span>{dataBlogs[match.params.id].title}</span>
 );
+
+const DynamicProjectsBreadcrumb = ({ match }) => (
+  <span>{dataProjects[match.params.id].title}</span>
+);
+
 const routes =  [
-  { path: "/blog/:id", breadcrumb: DynamicUserBreadcrumb },
+  { path: "/blog/:id", breadcrumb: DynamicBlogBreadcrumb },
+  { path: "/projects/:id", breadcrumb: DynamicProjectsBreadcrumb },
 ];
 
 const Breadcrumbs = () => {
-  const location = useLocation();
   const breadcrumbs = useBreadcrumbs(routes);
 
   return (
