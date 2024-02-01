@@ -1,0 +1,16 @@
+@import "../../styles/constants.scss";
+
+.wrapperSectionReserved {
+  width: 100%;
+}
+
+.textReserved {
+  color: $mainFontColor;
+  font-family: $font-family;
+  font-weight: 400;
+  font-size: 16px;
+  font-size: 14px;
+  text-align: center;
+  border-top: 1px solid #bebebe;
+  padding: 24px 0px;
+}

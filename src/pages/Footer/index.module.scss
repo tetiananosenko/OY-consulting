@@ -3,9 +3,7 @@
 .footer {
   width: 100%;
   background-color: $WhiteFlightColor;
-  padding: 40px 80px 24px;
-  display: flex;
-  flex-direction: column;
+  padding: 40px 80px 0px 80px;
 }
 
 .wrapperSectionContent {
@@ -16,46 +14,16 @@
   padding-bottom: 40px;
 }
 
-.wrapperSectionReserved {
-  width: 100%;
-}
-
 .logoWrapper {
   text-align: center;
 }
 
-.mediaWrapper {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
-.wrapperContent {
-  display: flex;
-  flex-direction: row;
-  max-width: 1048px;
-  width: 100%;
-  justify-content: space-between;
-}
-
-.title {
+.textLogo {
   color: $mainFontColor;
-  font-family: $font-family;
-  font-weight: bold;
-  font-size: 16px;
-}
-
-.text {
-  @extend .title;
+  font-family: $font-family-main;
   font-weight: 400;
-}
-
-.textReserved {
-  @extend .text;
-  font-size: 14px;
-  text-align: center;
-  border-top: 1px solid #BEBEBE;
-  padding-top: 24px;
+  font-size: 16px;
+  opacity: 0.8;
 }
 
 .iconWrapper {
@@ -64,8 +32,76 @@
   justify-content: center;
   align-items: center;
   cursor: pointer;
+
+  @include media(tablet) {
+    display: none;
+  }
 }
 
 .arrow {
   position: absolute;
+}
+
+.box {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1048px;
+  width: 100%;
+
+  @include media(tablet) {
+    flex-direction: column;
+    margin-bottom: 16px;
+  }
+}
+
+.columnDesktop {
+  @include media(tablet) {
+    display: none;
+  }
+}
+
+.columnMobile {
+  margin-top: 20px;
+
+  @include media(laptopUp) {
+    display: none;
+  }
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  @include media(tablet) {
+    max-height: 0;
+    visibility: hidden;
+    overflow: hidden;
+    transition: all 200ms ease-in;
+  }
+}
+
+.listOpen {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding-bottom: 0;
+  max-height: 220px;
+  transition: all 200ms ease;
+}
+
+.link {
+  color: $mainFontColor;
+  font-family: $font-family;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.link:not(:last-child) {
+  padding-bottom: 16px;
+}
+
+.info {
+  @include media(tablet) {
+    display: flex;
+    flex-direction: column;
+  }
 }
