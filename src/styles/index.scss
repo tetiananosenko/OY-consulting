@@ -24,3 +24,32 @@ body {
   margin: 0;
   font-family: League Spartan;
 }
+
+
+.bullet {
+  display: inline-block;
+  text-align: center;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: 2px solid black;
+  margin: 0px 12px 18px 0px;
+}
+
+.bulletActive {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: black;
+  margin: 0px 12px 14px 0px;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+}
+
+.swiper {
+    padding-bottom: 30px !important;
+}

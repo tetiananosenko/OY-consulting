@@ -3,11 +3,10 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import 'swiper/scss';
 import 'swiper/scss/pagination';
 import 'swiper/scss/navigation';
-import './index.scss';
 
 import { Navigation, Pagination } from "swiper/modules";
 
-export default function CustomSwiper({children}) {
+export default function CustomSwiper({children, navigation}) {
 
   return (
     <>
@@ -20,7 +19,7 @@ export default function CustomSwiper({children}) {
           bulletClass: 'bullet',
           bulletActiveClass: 'bulletActive',
         }}
-        navigation={true}
+        navigation={navigation}
         modules={[Pagination, Navigation]}
         breakpoints={{
             960: {

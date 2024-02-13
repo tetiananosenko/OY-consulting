@@ -94,3 +94,16 @@
   justify-content: center;
   align-items: center;
 }
+
+.wrapperArrows {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  z-index: 10;
+}
+
+.itemArrow {
+  transform: rotate(0.5turn);
+  align-self: flex-start;
+}

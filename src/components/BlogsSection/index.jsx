@@ -1,15 +1,20 @@
 import { Link } from 'react-router-dom';
-import { SwiperSlide } from 'swiper/react';
-import CustomSwiper from '../CustomSwiper';
+import { useState } from 'react';
+import { SwiperSlide } from "swiper/react";
 import dataBlogs from './data';
 import styles from './index.module.scss';
+import CustomSwiper from '../CustomSwiper';
+import {ReactComponent as ArrowSwiper} from '../../assets/svg/ArrowSwiper.svg';
 
 const BlogsSection = () => {
+  const [prevEl, setPrevEl] = useState(null);
+  const [nextEl, setNextEl] = useState(null);
+
   return (
     <div className={styles.wrapperSection}>
       <h1 className={styles.headerTitle}>Featured blogs</h1>
       <div className={styles.wrapperBlogs}>
-      <CustomSwiper> 
+           <CustomSwiper navigation={{prevEl, nextEl}}>
         {dataBlogs
           .slice(0, 3)
           .map(({ id, title, description, image, data }) => (
@@ -29,7 +34,15 @@ const BlogsSection = () => {
             </div>
             </SwiperSlide>
           ))}
-    </CustomSwiper>
+            <div className={styles.wrapperArrows}>
+          <button ref={node => setPrevEl(node)} className={styles.itemArrow}>
+            <ArrowSwiper />
+          </button>
+          <button ref={node => setNextEl(node)}>
+            <ArrowSwiper />
+          </button>
+        </div>
+       </CustomSwiper>
       </div>
     </div>
   );
