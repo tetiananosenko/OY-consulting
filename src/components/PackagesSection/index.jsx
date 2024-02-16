@@ -3,6 +3,7 @@ import { SwiperSlide } from 'swiper/react';
 import {ReactComponent as ArrowSwiper} from '../../assets/svg/ArrowSwiper.svg';
 import CustomSwiper from '../CustomSwiper';
 import dataPackages from './data';
+import useSize from "../../useSize";
 import styles from './index.module.scss';
 
 const PackagesSection = () => {
@@ -11,17 +12,21 @@ const PackagesSection = () => {
   const [prevEl, setPrevEl] = useState(null);
   const [nextEl, setNextEl] = useState(null);
 
+  const windowsize = useSize();
+
+  console.log(windowsize);
+
   return (
     <div className={styles.sectionWrapper}>
       <h1 className={styles.title}>Packages</h1>
       <div className={styles.wrapperCards}>
         <CustomSwiper navigation={{prevEl, nextEl}}>
         {dataPackages.map(({ title, info, description, id }) => (
-           <SwiperSlide>
+          <SwiperSlide>
           <div
             onMouseEnter={() => setIsId(id)}
             onMouseLeave={() => setIsId(1)}
-            className={isId === id ? styles.active : styles.cardWrapper}
+            className={isId === id || windowsize <= 960 ? styles.active : styles.cardWrapper}
           >
             <div className={styles.itemWrapper}>
               <h1 className={styles.textPackage}>{title}</h1>
@@ -31,12 +36,12 @@ const PackagesSection = () => {
               {Object.values(description).map(item => (
                 <p className={styles.text}>{item}</p>
               ))}
-              {isId === id && (
+              {isId === id || windowsize <= 960 ?
                 <button className={styles.button}>Get a consultation</button>
-              )}
+               : null}
             </div>
           </div>
-          </SwiperSlide>
+          </SwiperSlide> 
         ))}
         <div className={styles.wrapperArrows}>
           <button ref={node => setPrevEl(node)} className={styles.itemArrow}>

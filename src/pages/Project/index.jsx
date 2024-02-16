@@ -23,8 +23,11 @@ const Project = () => {
         <p className={styles.title}>{title}</p>
         <div className={styles.itemsWrapper}>
           <div className={styles.descriptionWrapper}>
-        {content.map(({text}) => (
+        {content.map(({text, title}) => (
+        <>
+        {title ? <p className={styles.titleDescription}>{title}</p>: null}
         <p className={styles.description}>{text}</p>
+        </>
         ))}
         </div>
         </div>

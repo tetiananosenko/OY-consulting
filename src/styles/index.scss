@@ -29,11 +29,11 @@ body {
 .bullet {
   display: inline-block;
   text-align: center;
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
   border: 2px solid black;
-  margin: 0px 12px 18px 0px;
+  margin: auto 10px;
 }
 
 .bulletActive {
@@ -42,7 +42,7 @@ body {
   height: 16px;
   border-radius: 50%;
   background: black;
-  margin: 0px 12px 14px 0px;
+  margin: auto;
 }
 
 .swiper-slide {
@@ -51,5 +51,10 @@ body {
 }
 
 .swiper {
-    padding-bottom: 30px !important;
+    padding-bottom: 45px !important;
+}
+
+.swiper-wrapper {
+  display: flex;
+  align-items: center;
 }
