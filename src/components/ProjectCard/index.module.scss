@@ -14,7 +14,7 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
-  margin-top: 8px;
+  margin: 8px 0px 16px 0px;
 }
 
 .button {
@@ -79,6 +79,7 @@
 .image {
   height: 322px;
   width: 520px;
+  object-fit: cover;
 
   @include media(tablet) {
     width: 381px;

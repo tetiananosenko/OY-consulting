@@ -26,7 +26,7 @@ const dataProjects = [
     title: 'VIP Diplomatic & Business Consulting Services',
     image: ImageServices,
     description:
-      'Thank you for considering Olga Yelchenko Consulting as your strategic partner.',
+      'At Olga Yelchenko Consulting, we offer a wide range of services to support your business growth. We are committed to tailoring our approach to meet your unique needs and requirements. Our goal is to provide you with comprehensive and personalized support that drives tangible business growth.',
       content: [{
         text: `Thank you for considering Olga Yelchenko Consulting as your strategic partner.`,
     },{

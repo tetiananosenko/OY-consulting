@@ -18,6 +18,7 @@ import ImageByMe8 from '../../assets/images/imagesByMe/image-byMe-8.jpg';
 import ImageByMe9 from '../../assets/images/imagesByMe/image-byMe-9.jpg';
 import ImageByMe10 from '../../assets/images/imagesByMe/image-byMe-10.jpg';
 import Instagram from '../../assets/svg/Instagram';
+import WebSite from '../../assets/svg/Website'
 
 const dataBlogs = [
   {
@@ -47,7 +48,9 @@ const dataBlogs = [
     },{
       text: `This blog will explore these and other indicators of Ukrainian authenticity. If you are interested in collaborating to promote Ukrainian culture and originality, please get in touch with me at oy@olgayelchenko.org.`,
     }, {
-      text: `Yours truly, Olga Yelchenko`,
+      text: `Yours truly,`,
+    },{
+      text: `Olga Yelchenko`,
     }
   ],
   },
@@ -86,8 +89,11 @@ const dataBlogs = [
     image: ImageByMeMain,
     data: '14.02.2024',
     media: [{
-      link: '',
+      link: 'https://www.instagram.com/tm.byme?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==',
       icon: <Instagram/>,
+    },{
+      link: 'https://byme.ua',
+      icon: <WebSite/>,
     }],
     content: [{
       text: `byMe is a Ukrainian clothing and footwear brand that will make you fall in love with Ukraine! byMe spotlights the resilience, creativity, and strength of the Ukrainian spirit.`,
@@ -123,7 +129,7 @@ const dataBlogs = [
       text: `"Berezil" is a Ukrainian theater studio founded by Les Kurbas in Kyiv in 1922. The main objective of this collection is to make people fall in love with "Berezil". It aims to introduce the history of the Art Association and its people, generate interest in sketches and decorations of the Art Association, and showcase the era's style while drawing parallels with the present.`,
       image: ImageByMe9,
     },{
-      text:`Les Kurbas is a Ukrainian director, theater theorist, experimenter, and creator of "new" Ukrainian theater. Les Kurbas and Mykola Kulish tandem - Kurbas staged plays based on Kulish's plays - their joint works are considered the most valuable. Les Kurbas and Mykola Kulish were shot in one day, together with 1109 other people in Sandarmoh tracts, which was a crime by the `,
+      text:`Les Kurbas is a Ukrainian director, theater theorist, experimenter, and creator of "new" Ukrainian theater. Les Kurbas and Mykola Kulish tandem - Kurbas staged plays based on Kulish's plays - their joint works are considered the most valuable. Les Kurbas and Mykola Kulish were shot in one day, together with 1109 other people in Sandarmoh tracts, which was a crime by the Soviet authorities.`,
     },{
       text: `The byMe brand refused to use natural leather. Instead, they chose faux leather, faux suede, and shoe textiles: All materials are resistant to damage and allow air to pass through. This decision is due to the consistent strategy of the byMe company and is aimed at an ethical treatment of animals and a more ecological and conscious approach to production. byMe's rejection of natural leather was supported by the animal protection organization UAnimals. This commitment was also recorded in the bilateral Memorandum of Cooperation. The first collection, entirely made of eco-leather, is a "Berezil" collection of shoes.`,
       image: ImageByMe10,

@@ -5,6 +5,7 @@ import CustomSwiper from '../CustomSwiper';
 import dataPackages from './data';
 import useSize from "../../useSize";
 import styles from './index.module.scss';
+import { Link } from 'react-router-dom';
 
 const PackagesSection = () => {
   const [isId, setIsId] = useState(1);
@@ -37,7 +38,7 @@ const PackagesSection = () => {
                 <p className={styles.text}>{item}</p>
               ))}
               {isId === id || windowsize <= 960 ?
-                <button className={styles.button}>Get a consultation</button>
+              <Link to='/contact' className={styles.button}>Get a consultation</Link>
                : null}
             </div>
           </div>

@@ -25,37 +25,20 @@ const About = () => (
             <Quotes />
           </div>
           <p className={styles.quote}>
-           I've had the privilege of collaborating with over 240 members and partners pf the U.S.-Ukraine Business Council who share a common vision. Together, we aim to strengthen economic and cultural bonds between the U.S.A. and Ukraine.
+          I've had the privilege of collaborating with over 240 members and partners of the U.S.-Ukraine Business Council who share a common vision. Together, we aim to strengthen economic and cultural bonds between the U.S.A. and Ukraine.
           </p>
           <p className={styles.author}>- Olga Yelchenko -</p>
         </div>
         <div>
           <p className={styles.textDescription}>
-            As for now, Olga Yelchenko is in process of registration of her own
-            company – Olga Yelchenko LLC. Based in New York, this firm provides
-            a bunch of services, including coordination between Ukrainian
-            producers and US buyers, analysis of the Ukrainian and US markets,
-            connections at the level of Ukrainian government, the Embassy of
-            Ukraine in the USA, Consulates of Ukraine in New York, Washington
-            D.C., Chicago, San Francisco and Houston as well as the U.S. Chamber
-            of Commerce and other NGOs. Additionally, Olga Yelchenko LLC
-            specialises in art curating, translation of literature, organization
-            of music performances to promote Ukrainian talent across the globe
-            and translations, including English, Ukrainian and Russian
-            languages.
+            Olga’s professional trajectory is equally impressive. Parallel to her studies in New York City, Olga began her career in fashion as a model, evolving to become a fashion editor, journalist, stylist and photographer. Olga’s love for fashion continues presently, as she excels in strategizing the promotion of Ukrainian brands in the United States of America, as well as globally. 
+
           </p>
           <p className={styles.textDescription}>
-            Olga’s main mission is to showcase Ukraine's potential and
-            achievements as a place to do business, invest, and visit, as well
-            as to support the Ukrainian people and institutions in their pursuit
-            of democracy, security, and prosperity. Passionate about what she
-            does, Olga organizes events, projects, and campaigns that highlight
-            the opportunities and challenges in Ukraine, as well as by
-            facilitating dialogue and collaboration among stakeholders from the
-            public and private sectors, the media, the academia, and the civil
-            society. She also leverages her own digital platform and network to
-            communicate and disseminate information and analysis on Ukraine's
-            history, current developments, and future prospects.
+            As a PR Manager/Journalist at the Ukrainian Chamber of Commerce and Industry, Olga worked in expanding media coverage and communications strategies. Afterward, she held roles as PR Director and Art Curator at the BM Babak-Matveev Fine Art Project and as PR Consultant at Schivo Medical, 
+Having established her own company, Olga Yelchenko Consulting, in the beginning of 2022, with its headquarters located in the heart of Fifth Avenue in Manhattan, New York City, the boutique company offers a suite of VIP diplomatic and business services spanning coordination between Ukrainian producers and U.S. buyers, market analysis, and high-level connections with government entities and various organizations. 
+Olga’s core mission revolves around showcasing Ukraine’s potential as a vibrant business hub and supporting its democratic journey. Her passion fuels events, projects, and campaigns aimed at highlighting Ukrainian opportunities while fostering dialogue and collaboration across sectors, leveraging digital platforms to disseminate information on Ukraine’s rich history and future.
+
           </p>
         </div>
       </div>

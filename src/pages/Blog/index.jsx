@@ -1,4 +1,4 @@
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import dataBlogs from '../../components/BlogsSection/data';
 import Layout from '../Layout';
 import styles from './index.module.scss';
@@ -31,7 +31,7 @@ const Blog = () => {
         {media ? 
         <>
         <p className={styles.stylesFollow}>Follow <span className={styles.name}>{name}</span> on social media:</p>
-         {media.map(({link, icon}) => (<p className={styles.icon}>{icon}</p>))} 
+         {media.map(({link, icon}) => (<Link to={link}  target="_blank" className={styles.icon}>{icon}</Link>))} 
          </>
         : null}
         <p className={styles.data}>{data}</p>

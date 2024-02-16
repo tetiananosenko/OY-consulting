@@ -38,6 +38,7 @@
 .image {
   width: 628px;
   height: 392px;
+  object-fit: cover;
 
   @include media(tablet) {
     max-width: 416px;
