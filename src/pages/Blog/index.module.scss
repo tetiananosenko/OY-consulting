@@ -48,7 +48,7 @@
 
 .stylesFollow {
   @extend .description;
-  margin: 0px;
+  margin-bottom: 8px;
 }
 
 .name {
@@ -65,5 +65,13 @@
 }
 
 .icon {
-  margin: 16px 16px 0px 0px;
+  margin: 16px 16px 30px 0px;
+}
+
+.textSign {
+  margin-top: 5px;
+  color: $mainFontColor;
+  font-family: $font-family;
+  font-size: 18px;
+  font-weight: 500;
 }

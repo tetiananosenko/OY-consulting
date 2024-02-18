@@ -1,4 +1,3 @@
-import Image from '../../assets/images/main-image.png';
 import ImageAuthenicMain from '../../assets/images/Authentic/main-image-Authenic.jpg';
 import ImageAuthenic1 from '../../assets/images/Authentic/image-authenic-1.jpg';
 import ImageUAWorkshopMain from '../../assets/images/UAWorkshop/main-image-UAWorkshop.jpg';
@@ -47,12 +46,12 @@ const dataBlogs = [
       image: ImageAuthenic1,
     },{
       text: `This blog will explore these and other indicators of Ukrainian authenticity. If you are interested in collaborating to promote Ukrainian culture and originality, please get in touch with me at oy@olgayelchenko.org.`,
-    }, {
+    },],
+  sign: [{
       text: `Yours truly,`,
-    },{
+  },{
       text: `Olga Yelchenko`,
-    }
-  ],
+  }],
   },
   {
     id: '1',
@@ -140,6 +139,13 @@ const dataBlogs = [
     },{
       text: `Join and help make the world fall in love with Ukraine!`,
     },],
+    sign: [{
+      text: `By Olga Prudka`,
+  },{
+      text: `Advisor to President`,
+  },{
+    text: `OY onsulting`,
+  }],
   },
 ];
 

@@ -17,7 +17,7 @@ const Blog = () => {
     <Layout childComponent={
        <img src={image} className={styles.mainImage}/>
   }>
-     {data.map(({ title, name, content, media, data }) => (
+     {data.map(({ title, name, content, media, data, sign }) => (
       <>
         <p className={styles.title}>{title}</p>
         <div className={styles.itemsWrapper}>
@@ -30,8 +30,13 @@ const Blog = () => {
         ))}
         {media ? 
         <>
-        <p className={styles.stylesFollow}>Follow <span className={styles.name}>{name}</span> on social media:</p>
+        <p className={styles.stylesFollow}>Follow <span className={styles.name}>{name}</span> on:</p>
          {media.map(({link, icon}) => (<Link to={link}  target="_blank" className={styles.icon}>{icon}</Link>))} 
+         </>
+        : null}
+         {sign ? 
+        <>
+         {sign.map(({text}) => (<p className={styles.textSign}>{text}</p>))} 
          </>
         : null}
         <p className={styles.data}>{data}</p>

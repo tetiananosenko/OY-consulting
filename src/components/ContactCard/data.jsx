@@ -16,7 +16,7 @@ const dataContact = [
   {
     id: 0,
     icon: <Location />,
-    info: 'Manhattan, New York, US',
+    info: 'Manhattan, New York, USA',
   },
 ];
 
