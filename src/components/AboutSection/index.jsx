@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import photoOlga from '../../assets/images/about-small-image.png';
+import photoOlga from '../../assets/images/about-small-image.JPG';
 import styles from './index.module.scss';
 
 const AboutSection = () => (
